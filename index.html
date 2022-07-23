@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gaming</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 15px;
+    }
+
+    /* CSS reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/Img bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        color: white;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+
+    }
+
+    .left img {
+        width: 79px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 12px;
+        font-size: 12px;
+        margin: 0px -5px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 20px auto;
+        width: 33%;
+
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 34px;
+    }
+
+    .btn {
+        margin: 17px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 9px;
+        border: 2px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 12px;
+
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(54, 53, 53);
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 14px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #c1bebe;
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 49px 8px;
+        width: 33%;
+        padding: 27px;
+        border-radius: 30px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 348px;
+        padding: 3px;
+        margin: 2px auto;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .bn {
+        margin: 10px 9px;
+        background-color: black;
+        color: white;
+        padding: 9px 18px;
+        border: 2px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        margin: 29px 87px;
+    }
+
+    .bn:hover {
+        background-color: rgb(54, 53, 53);
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+
+            <!-- <img src="img/Logo2.png" alt=""> -->
+            <a href="http://127.0.0.1:5500/Projects/index.html#"><img src="img/Logo2.png" alt=""></a>
+            <div>Gaming World</div>
+
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- for search or buttons -->
+        <div class="right">
+            <input type="text" class="btn" placeholder="Search this website">
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THIS WORLD</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your gaming preference">
+            </div>
+
+            <button class="bn">
+                Submit
+            </button>
+            <button class="bn">
+                Reset
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
